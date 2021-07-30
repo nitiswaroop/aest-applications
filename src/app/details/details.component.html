@@ -1,0 +1,9 @@
+<div >
+    <div  class="details-card" *ngFor="let userdetails of usersData" >
+      <h3>{{userdetails.name}}</h3>
+      <div ><label>Email Address: </label> <span>{{userdetails.email}}</span></div>
+      <div><label>Postal Address: </label> <span>{{userdetails.address}}</span></div>
+      <div><label>Phone Number: </label> <span>{{userdetails.contactNo}}</span></div>
+      <div><label>Favourite Band: </label> <span>{{userdetails.favBand}}</span></div>
+    </div>
+  </div>

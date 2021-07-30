@@ -1,0 +1,10 @@
+<div class="pag-space">Rows per Page 
+    <select class="size-page" [(ngModel)]="size" (change)="changeSize()">
+    <option selected value="5">5</option>
+    <option value="10">10</option>
+    <option value="15">15</option>
+  </select>
+  {{startRow}}-{{endRow}} of {{totalCount}}
+  <button type="button" class="plain" (click)="changePage(this.pageNumber - 1, false)" [disabled]="this.disableBackward"> < </button> &nbsp;
+  <button type="button" class="plain" (click)="changePage(this.pageNumber + 1, true)" [disabled]="this.disableForward"> > </button>
+  </div>
